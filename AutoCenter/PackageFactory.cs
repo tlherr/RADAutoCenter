@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutoCenter
 {
-    class PackageFactory
+    public class PackageFactory
     {
         string[][] standardArray =
         {
@@ -31,7 +31,7 @@ namespace AutoCenter
         };
         
 
-        string[][] getPackage(string name, string fragrance, bool interior, bool exterior)
+        public string[][] getPackage(string name, string fragrance)
         {
             name = name.ToLower();
             switch(name)
