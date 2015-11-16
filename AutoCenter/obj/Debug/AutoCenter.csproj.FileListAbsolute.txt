@@ -8,3 +8,4 @@ C:\Users\Tom\Dropbox\Academic\2015\COMP1004 Rapid Application Development\TakeHo
 C:\Users\Tom\Dropbox\Academic\2015\COMP1004 Rapid Application Development\TakeHomeAssignmentTwo\Assignment\AutoCenter\obj\Debug\AutoCenter.AutoCenterForm.resources
 C:\Users\Tom\Dropbox\Academic\2015\COMP1004 Rapid Application Development\TakeHomeAssignmentTwo\Assignment\AutoCenter\obj\Debug\AutoCenter.WelcomeForm.resources
 C:\Users\Tom\Dropbox\Academic\2015\COMP1004 Rapid Application Development\TakeHomeAssignmentTwo\Assignment\AutoCenter\obj\Debug\AutoCenter.Properties.Resources.resources
+C:\Users\Tom\Dropbox\Academic\2015\COMP1004 Rapid Application Development\TakeHomeAssignmentTwo\Assignment\AutoCenter\obj\Debug\AutoCenter.AboutForm.resources
