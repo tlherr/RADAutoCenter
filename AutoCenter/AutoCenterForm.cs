@@ -24,6 +24,11 @@ namespace AutoCenter
             packageTextBox.Text = String.Empty;
             ComboBox comboBox = (ComboBox)sender;
 
+            if (packageComboBox.SelectedItem == null)
+            {
+                return;
+            }
+
             string[][] data = this.pkgFactory.getPackage(comboBox.SelectedItem.ToString(), null);
 
             //Consume the arrays provided
@@ -56,6 +61,11 @@ namespace AutoCenter
             fragranceTextBox.Text = String.Empty;
             ComboBox comboBox = (ComboBox)sender;
 
+            if (fragranceComboBox.SelectedItem == null)
+            {
+                return;
+            }
+
             string[][] data = this.pkgFactory.getPackage(packageComboBox.SelectedItem.ToString(), comboBox.SelectedItem.ToString());
 
             //Consume the arrays provided
@@ -81,6 +91,12 @@ namespace AutoCenter
         {
             AboutForm aboutForm = new AboutForm();
             aboutForm.Show();
+        }
+
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fragranceComboBox.SelectedItem = null;
+            packageComboBox.SelectedItem = null;
         }
     }
 }
