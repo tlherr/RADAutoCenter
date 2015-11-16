@@ -34,7 +34,7 @@
             this.packageComboBox = new System.Windows.Forms.ComboBox();
             this.fragranceComboBox = new System.Windows.Forms.ComboBox();
             this.packageTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.fragranceTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -98,6 +98,7 @@
             this.fragranceComboBox.Name = "fragranceComboBox";
             this.fragranceComboBox.Size = new System.Drawing.Size(121, 21);
             this.fragranceComboBox.TabIndex = 4;
+            this.fragranceComboBox.SelectedIndexChanged += new System.EventHandler(this.fragranceComboBox_SelectedIndexChanged);
             // 
             // packageTextBox
             // 
@@ -109,15 +110,15 @@
             this.packageTextBox.Size = new System.Drawing.Size(188, 76);
             this.packageTextBox.TabIndex = 5;
             // 
-            // textBox1
+            // fragranceTextBox
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(177, 216);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(188, 76);
-            this.textBox1.TabIndex = 6;
+            this.fragranceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fragranceTextBox.Location = new System.Drawing.Point(177, 216);
+            this.fragranceTextBox.Multiline = true;
+            this.fragranceTextBox.Name = "fragranceTextBox";
+            this.fragranceTextBox.ReadOnly = true;
+            this.fragranceTextBox.Size = new System.Drawing.Size(188, 76);
+            this.fragranceTextBox.TabIndex = 6;
             // 
             // label1
             // 
@@ -155,7 +156,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.fragranceTextBox);
             this.Controls.Add(this.packageTextBox);
             this.Controls.Add(this.fragranceComboBox);
             this.Controls.Add(this.packageComboBox);
@@ -177,7 +178,7 @@
         private System.Windows.Forms.ComboBox packageComboBox;
         private System.Windows.Forms.ComboBox fragranceComboBox;
         private System.Windows.Forms.TextBox packageTextBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox fragranceTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
