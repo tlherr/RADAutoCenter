@@ -98,5 +98,10 @@ namespace AutoCenter
             fragranceComboBox.SelectedItem = null;
             packageComboBox.SelectedItem = null;
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
