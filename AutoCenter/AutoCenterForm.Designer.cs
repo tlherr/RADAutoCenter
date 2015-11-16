@@ -88,7 +88,7 @@
             this.packageComboBox.Location = new System.Drawing.Point(28, 90);
             this.packageComboBox.Name = "packageComboBox";
             this.packageComboBox.Size = new System.Drawing.Size(121, 21);
-            this.packageComboBox.TabIndex = 3;
+            this.packageComboBox.TabIndex = 1;
             this.packageComboBox.SelectedIndexChanged += new System.EventHandler(this.packageComboBox_SelectedIndexChanged);
             // 
             // fragranceComboBox
@@ -105,7 +105,7 @@
             this.fragranceComboBox.Location = new System.Drawing.Point(28, 216);
             this.fragranceComboBox.Name = "fragranceComboBox";
             this.fragranceComboBox.Size = new System.Drawing.Size(121, 21);
-            this.fragranceComboBox.TabIndex = 4;
+            this.fragranceComboBox.TabIndex = 2;
             this.fragranceComboBox.SelectedIndexChanged += new System.EventHandler(this.fragranceComboBox_SelectedIndexChanged);
             // 
             // packageTextBox
@@ -117,6 +117,7 @@
             this.packageTextBox.ReadOnly = true;
             this.packageTextBox.Size = new System.Drawing.Size(188, 76);
             this.packageTextBox.TabIndex = 5;
+            this.packageTextBox.TabStop = false;
             // 
             // fragranceTextBox
             // 
@@ -127,6 +128,7 @@
             this.fragranceTextBox.ReadOnly = true;
             this.fragranceTextBox.Size = new System.Drawing.Size(188, 76);
             this.fragranceTextBox.TabIndex = 6;
+            this.fragranceTextBox.TabStop = false;
             // 
             // label1
             // 
@@ -163,27 +165,27 @@
             this.clearToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(153, 92);
+            this.contextMenuStrip.Size = new System.Drawing.Size(108, 70);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.clearToolStripMenuItem.Text = "Clear";
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.clearToolStripMenuItem.Text = "&Clear";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // pictureBox1
@@ -213,6 +215,8 @@
             this.Controls.Add(this.fragranceLabel);
             this.Controls.Add(this.packageLabel);
             this.Controls.Add(this.titleLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "AutoCenterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JJ Auto Center";

@@ -8,6 +8,7 @@ namespace AutoCenter
 {
     public class PackageFactory
     {
+        //Populate specified data structures
         string[][] standardArray =
         {
             new string[] {"Hand Wash" },
@@ -30,7 +31,7 @@ namespace AutoCenter
             new string[] {"Fragrance", "Shampoo Carpets", "Shampoo Upholstery", "Interior Protection Coat (Dashboard and Console)", "Scotchguard"}
         };
         
-
+        //When a package is requested the name and fragrance are specified, a matching package array will be formatted and returned
         public string[][] getPackage(string name, string fragrance)
         {
             name = name.ToLower();
