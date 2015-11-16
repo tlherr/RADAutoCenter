@@ -16,7 +16,11 @@ namespace AutoCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AutoCenterForm());
+            WelcomeForm.ShowSplashScreen();
+            AutoCenterForm mainForm = new AutoCenterForm();
+
+            WelcomeForm.CloseForm();
+            Application.Run(mainForm);
         }
     }
 }

@@ -164,6 +164,7 @@
             this.Controls.Add(this.packageLabel);
             this.Controls.Add(this.titleLabel);
             this.Name = "AutoCenterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JJ Auto Center";
             this.ResumeLayout(false);
             this.PerformLayout();
