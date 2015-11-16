@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace AutoCenter
 {
     partial class AutoCenterForm
     {
@@ -81,6 +81,7 @@
             this.packageComboBox.Name = "packageComboBox";
             this.packageComboBox.Size = new System.Drawing.Size(121, 21);
             this.packageComboBox.TabIndex = 3;
+            this.packageComboBox.SelectedIndexChanged += new System.EventHandler(this.packageComboBox_SelectedIndexChanged);
             // 
             // fragranceComboBox
             // 
